@@ -16,7 +16,7 @@ public class NewMain {
         Scanner scanner = new Scanner(System.in); // Within my main class I use scanner to take user input. I declare Scanner named scanner
         System.out.println("How many numbers are you willing to enter?");// This message will be the first message that user will see.
         int lengthOfArray = scanner.nextInt();// By enetring an integer numer user will determine how many numbers are they willing to enter
-        System.out.println("Amzing! You want to enter "+ lengthOfArray + " numbers. Now , please enter them");
+        System.out.println("Amazing! You want to enter "+ lengthOfArray + " numbers. Now , please enter them");
         
         int[] userInput = new int[lengthOfArray]; // I use the number user entered to determine the length of my array.
         
@@ -26,7 +26,7 @@ public class NewMain {
         }
          max(userInput);// this function calulates the maximum value
          min(userInput);// this function caluclates the minimum value
-        avrage(userInput);// this function calculates avrage value
+        average(userInput);// this function calculates avrage value
         
         System.exit(0);// end of a program
         
@@ -60,18 +60,18 @@ public class NewMain {
         
       
     }
-    public static void avrage (int [] array)
+    public static void average (int [] array)
     {
-       //to calculate the avrage I use an additional varable "sum" which will store the sum of all the values of my array. After that I declere the varable avrege type float and initalize it to the value of sum devided by the length of my array.
+       //to calculate the average I use an additional varable "sum" which will store the sum of all the values of my array. After that I declere the varable avrege type float and initalize it to the value of sum devided by the length of my array.
         int sum = 0; 
         for( int i=0; i<array.length; i++)
         {
             sum= sum + array[i];
            
         }
-        float avrage = (float)sum/array.length;
+        float average = (float)sum/array.length;
         
-        System.out.println("Avrege of your numbers: " + avrage);
+        System.out.println("Average of your numbers: " + average);
         
     }
     
